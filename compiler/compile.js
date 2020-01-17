@@ -8,7 +8,7 @@ const writeFile = util.promisify(fs.writeFile);
 const loadRemoteSolc = util.promisify(solc.loadRemoteVersion);
 
 (async() => {
-  console.log('START Compile!!');
+  console.log('\nSTART Compile!!');
 
   // await loadRemoteSolc('0.5.12');
 
@@ -39,7 +39,7 @@ const loadRemoteSolc = util.promisify(solc.loadRemoteVersion);
     await writeFile(`${__dirname}/outputs/${key}.bytecode`, bytecode);
   });
   
-  console.log('END Compile!!')
+  console.log('END Compile!!\n')
 })()
 .catch(err => {
   console.error('compile failed.');

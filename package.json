@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "solc": "^0.6.1",
     "truffle": "^5.1.8"
   }
 }

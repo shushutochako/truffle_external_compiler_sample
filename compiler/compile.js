@@ -5,12 +5,9 @@ const fs = require('fs');
 const util = require('util');
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
-const loadRemoteSolc = util.promisify(solc.loadRemoteVersion);
 
 (async() => {
   console.log('\nSTART Compile!!');
-
-  // await loadRemoteSolc('0.5.12');
 
   const SOL_NAME = 'Test';
 

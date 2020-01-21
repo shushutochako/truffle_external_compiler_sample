@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ext-compiler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/app
+    tty: true
